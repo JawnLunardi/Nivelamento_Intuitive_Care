@@ -1,0 +1,17 @@
+SELECT d.reg_ans, o.razao_social, SUM(d.vl_saldo_final) AS total_despesas
+FROM demonstracoes_contabeis d
+JOIN operadoras o ON d.reg_ans = o.registro_ans
+WHERE d.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR ORÇAMENTO GLOBAL'
+AND d.data >= (SELECT MAX(data) FROM demonstracoes_contabeis) - INTERVAL 3 MONTH
+GROUP BY d.reg_ans, o.razao_social
+ORDER BY total_despesas DESC
+LIMIT 10;
+
+SELECT d.reg_ans, o.razao_social, SUM(d.vl_saldo_final) AS total_despesas
+FROM demonstracoes_contabeis d
+JOIN operadoras o ON d.reg_ans = o.registro_ans
+WHERE d.descricao = 'EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  NA MODALIDADE DE PAGAMENTO POR ORÇAMENTO GLOBAL'
+AND d.data >= (SELECT MAX(data) FROM demonstracoes_contabeis) - INTERVAL 1 YEAR
+GROUP BY d.reg_ans, o.razao_social
+ORDER BY total_despesas DESC
+LIMIT 10;

@@ -1,0 +1,34 @@
+CREATE DATABASE IF NOT EXISTS ans_data;
+USE ans_data;
+
+CREATE TABLE demonstracoes_contabeis (
+    data DATE NOT NULL,
+    reg_ans INT NOT NULL,
+    cd_conta_contabil VARCHAR(50) NOT NULL,
+    descricao TEXT NOT NULL,
+    vl_saldo_inicial DECIMAL(15,2),
+    vl_saldo_final DECIMAL(15,2)
+);
+
+CREATE TABLE operadoras (
+    registro_ans INT PRIMARY KEY,
+    cnpj VARCHAR(20),
+    razao_social TEXT NOT NULL,
+    nome_fantasia TEXT,
+    modalidade VARCHAR(50),
+    logradouro TEXT,
+    numero VARCHAR(20),
+    complemento TEXT,
+    bairro TEXT,
+    cidade VARCHAR(100),
+    uf CHAR(2),
+    cep VARCHAR(10),
+    ddd VARCHAR(5),
+    telefone VARCHAR(20),
+    fax VARCHAR(20),
+    endereco_eletronico TEXT,
+    representante TEXT,
+    cargo_representante TEXT,
+    regiao_de_comercializacao VARCHAR(5),
+    data_registro_ans DATE
+);

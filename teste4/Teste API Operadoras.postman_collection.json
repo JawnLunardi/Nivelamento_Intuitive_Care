@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "87b272bc-b03e-4067-be8e-16d60745bf93",
+		"name": "Teste API Operadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37241067"
+	},
+	"item": [
+		{
+			"name": "Buscar Operadora",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar_operadora/?nome=UNIMED",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar_operadora",
+						""
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "UNIMED"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/buscar_operadora/?nome=UNIMED",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"buscar_operadora",
+								""
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "UNIMED"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Mon, 31 Mar 2025 19:04:41 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "5880"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"operadoras\": [\n        {\n            \"registro_ans\": 701,\n            \"cnpj\": \"04487255000181\",\n            \"razao_social\": \"UNIMED SEGUROS SAÚDE S/A\",\n            \"nome_fantasia\": \"SEGUROS UNIMED\",\n            \"modalidade\": \"Seguradora Especializada em Saúde\",\n            \"logradouro\": \"ALAMEDA MINISTRO ROCHA AZEVEDO\",\n            \"numero\": \"346\",\n            \"complemento\": \"Edifício Seguros, andares térreo ao 9º, \",\n            \"bairro\": \"CERQUEIRA CESAR\",\n            \"cidade\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01410901\",\n            \"ddd\": \"11\",\n            \"telefone\": \"32659996\",\n            \"fax\": \"32659049\",\n            \"endereco_eletronico\": \"compliance@segurosunimed.com.br\",\n            \"representante\": \"AGENOR FERREIRA DA SILVA FILHO\",\n            \"cargo_representante\": \"DIRETOR\",\n            \"regiao_de_comercializacao\": \"1\",\n            \"data_registro_ans\": \"2001-07-30\"\n        },\n        {\n            \"registro_ans\": 300136,\n            \"cnpj\": \"00103956000119\",\n            \"razao_social\": \"UNIMED LITORAL SUL/RS - COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA.\",\n            \"nome_fantasia\": \"UNIMED LITORAL SUL/RS\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"RUA AQUIDABAN\",\n            \"numero\": \"692\",\n            \"complemento\": \"\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Rio Grande\",\n            \"uf\": \"RS\",\n            \"cep\": \"96200480\",\n            \"ddd\": \"53\",\n            \"telefone\": \"32313766\",\n            \"fax\": \"332319333\",\n            \"endereco_eletronico\": \"unimedls@unimedlitoralsul.com.br\",\n            \"representante\": \"JOSÉ CARLOS HENRIQUE DUARTE DOS SANTOS\",\n            \"cargo_representante\": \"PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-18\"\n        },\n        {\n            \"registro_ans\": 300713,\n            \"cnpj\": \"54991211000162\",\n            \"razao_social\": \"UNIMED DE ASSIS COOPERATIVA DE TRABALHO MÉDICO\",\n            \"nome_fantasia\": \"UNIMED DE ASSIS\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"AVENIDA WALTER ANTONIO FONTANA\",\n            \"numero\": \"1997\",\n            \"complemento\": \"\",\n            \"bairro\": \"VILA CLAUDIA\",\n            \"cidade\": \"Assis\",\n            \"uf\": \"SP\",\n            \"cep\": \"19815340\",\n            \"ddd\": \"18\",\n            \"telefone\": \"33023000\",\n            \"fax\": \"33023000\",\n            \"endereco_eletronico\": \"ans@unimed-assis.com.br\",\n            \"representante\": \"ELYSEU PALMA BOUTROS\",\n            \"cargo_representante\": \"DIRETOR PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-18\"\n        },\n        {\n            \"registro_ans\": 300870,\n            \"cnpj\": \"48090146000100\",\n            \"razao_social\": \"UNIMED DO BRASIL - CONF. NACIONAL DAS COOPERATIVAS MÉDICAS\",\n            \"nome_fantasia\": \"UNIMED DO BRASIL\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"ALAMEDA SANTOS\",\n            \"numero\": \"1827\",\n            \"complemento\": \"15º ANDAR\",\n            \"bairro\": \"CERQUEIRA CÉSAR\",\n            \"cidade\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01419909\",\n            \"ddd\": \"11\",\n            \"telefone\": \"32659700\",\n            \"fax\": \"32659540\",\n            \"endereco_eletronico\": \"regulamentacaoub@unimed.coop.br\",\n            \"representante\": \"OMAR ABUJAMRA JUNIOR\",\n            \"cargo_representante\": \"PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"1\",\n            \"data_registro_ans\": \"1998-12-17\"\n        },\n        {\n            \"registro_ans\": 301060,\n            \"cnpj\": \"41871989000196\",\n            \"razao_social\": \"UNIMED ITUIUTABA COOPERATIVA TRABALHO MÉDICO LTDA.\",\n            \"nome_fantasia\": \"UNIMED ITUIUTABA\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"AV. DEZESSETE\",\n            \"numero\": \"1196\",\n            \"complemento\": \"\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Ituiutaba\",\n            \"uf\": \"MG\",\n            \"cep\": \"38300132\",\n            \"ddd\": \"34\",\n            \"telefone\": \"32680700\",\n            \"fax\": \"\",\n            \"endereco_eletronico\": \"unimed@unimedituiutaba.coop.br\",\n            \"representante\": \"ROSANE ABRAMO\",\n            \"cargo_representante\": \"DIRETORA PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-17\"\n        },\n        {\n            \"registro_ans\": 301124,\n            \"cnpj\": \"01476619000130\",\n            \"razao_social\": \"UNIMED GURUPI COOPERATIVA DE TRABALHO MÉDICO\",\n            \"nome_fantasia\": \"UNIMED GURUPI\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"AVENIDA ALAGOAS\",\n            \"numero\": \"2125\",\n            \"complemento\": \"L 01 - QD A - LOTEAMENTO DOM PEDRO I\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Gurupi\",\n            \"uf\": \"TO\",\n            \"cep\": \"77410070\",\n            \"ddd\": \"\",\n            \"telefone\": \"\",\n            \"fax\": \"\",\n            \"endereco_eletronico\": \"gerencia@unimedgurupi.com.br\",\n            \"representante\": \"FABRICIO DOMINICI FERREIRA\",\n            \"cargo_representante\": \"PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-24\"\n        },\n        {\n            \"registro_ans\": 301574,\n            \"cnpj\": \"50480953000172\",\n            \"razao_social\": \"UNIMED DE LIMEIRA COOPERATIVA DE TRABALHO MÉDICO\",\n            \"nome_fantasia\": \"UNIMED LIMEIRA\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"RUA SANTA TEREZINHA\",\n            \"numero\": \"05\",\n            \"complemento\": \"\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Limeira\",\n            \"uf\": \"SP\",\n            \"cep\": \"13480090\",\n            \"ddd\": \"19\",\n            \"telefone\": \"34048000\",\n            \"fax\": \"34048008\",\n            \"endereco_eletronico\": \"diretoria@unimedlimeira.com.br\",\n            \"representante\": \"ALCY DE CASTRO MELLO\",\n            \"cargo_representante\": \"DIRETOR PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-18\"\n        },\n        {\n            \"registro_ans\": 301744,\n            \"cnpj\": \"01356020000162\",\n            \"razao_social\": \"UNIMED MEIO OESTE CATARINENSE COOPERATIVA DE TRABALHO MÉDICO\",\n            \"nome_fantasia\": \"UNIMED MEIO OESTE - SC\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"AV.XV DE NOVEMBRO\",\n            \"numero\": \"125\",\n            \"complemento\": \"\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Joaçaba\",\n            \"uf\": \"SC\",\n            \"cep\": \"89600000\",\n            \"ddd\": \"49\",\n            \"telefone\": \"35519100\",\n            \"fax\": \"35519109\",\n            \"endereco_eletronico\": \"ans@unimedmeiooeste.coop.br\",\n            \"representante\": \" JOÃO ROGÉRIO NUNES FILHO\",\n            \"cargo_representante\": \"PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-17\"\n        },\n        {\n            \"registro_ans\": 302228,\n            \"cnpj\": \"00747041000146\",\n            \"razao_social\": \"UNIMED VALE DO CORUMBÁ COOPERATIVA DE TRABALHO MEDICO\",\n            \"nome_fantasia\": \"UNIMED VALE DO CORUMBA COOPERATIVA DE TRABALHO MEDICO\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"RUA 13 DE MAIO\",\n            \"numero\": \"13\",\n            \"complemento\": \"\",\n            \"bairro\": \"SETOR GUANABARA\",\n            \"cidade\": \"Ipameri\",\n            \"uf\": \"GO\",\n            \"cep\": \"75780000\",\n            \"ddd\": \"64\",\n            \"telefone\": \"34911735\",\n            \"fax\": \"34911735\",\n            \"endereco_eletronico\": \"weslei@unimedvaledocorumba.coop.br\",\n            \"representante\": \"ALESSANDRO DE SOUZA ROSA\",\n            \"cargo_representante\": \"DIRETOR PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-24\"\n        },\n        {\n            \"registro_ans\": 302953,\n            \"cnpj\": \"35830868000101\",\n            \"razao_social\": \"UNIMED DE MACAÉ COOPERATIVA DE ASSISTÊNCIA À SAÚDE\",\n            \"nome_fantasia\": \"UNIMED COSTA DO SOL\",\n            \"modalidade\": \"Cooperativa Médica\",\n            \"logradouro\": \"RUA EUZÉBIO DE QUEIROZ\",\n            \"numero\": \"454\",\n            \"complemento\": \"\",\n            \"bairro\": \"CENTRO\",\n            \"cidade\": \"Macaé\",\n            \"uf\": \"RJ\",\n            \"cep\": \"27910230\",\n            \"ddd\": \"22\",\n            \"telefone\": \"21052238\",\n            \"fax\": \"21058000\",\n            \"endereco_eletronico\": \"regulacao@costadosol.unimed.com.br\",\n            \"representante\": \"TALES AZEVEDO DOS SANTOS\",\n            \"cargo_representante\": \"DIRETOR PRESIDENTE\",\n            \"regiao_de_comercializacao\": \"5\",\n            \"data_registro_ans\": \"1998-12-21\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
